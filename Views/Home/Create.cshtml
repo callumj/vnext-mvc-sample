@@ -1,0 +1,26 @@
+@using MvcApp.Models
+@model Todo
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Create Todo";
+    string helloClass = null;
+}
+
+@using(Html.BeginForm())
+{
+    <div>
+      <legend>Create Todo</legend>
+
+      <div class="form-group">
+        @Html.LabelFor(model => model.Name)
+        @Html.TextBoxFor(model => model.Name)
+    </div>
+
+    <div class="checkbox">
+        @Html.LabelFor(model => model.Completed)
+        @Html.CheckBoxFor(model => model.Completed)
+    </div>
+
+    <button type="submit" class="btn btn-default">Submit</button>
+</div>
+}
