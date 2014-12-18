@@ -1,0 +1,13 @@
+{
+  "name": "mvc-app",
+  "version": "0.0.1",
+  "description": "An example module to illustrate the usage of a package.json",
+  "dependencies": {
+    "gulp": "~3.8.10",
+    "gulp-watch": "~3.0.0"
+  },
+  "preferGlobal": false,
+  "private": false,
+  "license": "MIT",
+  "homepage": "https://github.com/nodejitsu/browsenpm.org"
+}
